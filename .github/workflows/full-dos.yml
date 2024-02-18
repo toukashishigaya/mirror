@@ -18,8 +18,8 @@ jobs:
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.USER_GITHUB_TOKEN }}
-          SRC_ORG: ${{ secrets.SRC_ORG.DOS }}
-          DST_ORG: ${{ secrets.DST_ORG.DOS }}
+          SRC_ORG: ${{ secrets.SRC_ORG_DOS }}
+          DST_ORG: ${{ secrets.DST_ORG_DOS }}
         run: |
             pip install pygithub
             python -u mirror_github_org.py --full-run
