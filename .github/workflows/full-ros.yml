@@ -1,4 +1,4 @@
-name: Full update
+name: Full update ROS
 on: 
   workflow_dispatch:
   schedule:
